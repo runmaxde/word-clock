@@ -1,136 +1,132 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>*</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<script src="data.js"></script>
-	<script src="run.js"></script>
-	<script src="startClock.js"></script>
-			
+  <script src="./main.js" type="module"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QLOCK</title>
 </head>
 
-<body onload="runInit()">
-	<div id="box">
-		<div id="clock">
-			<span class="" id=501></span>
-			<span class="" id=502></span>
-			<span class="" id=503></span>
-			<span class="" id=504></span>
-			<p class="active" id="0">E</p>
-			<p class="active" id="1">S</p>
-			<p class="" id="2">K</p>
-			<p class="active" id="3">I</p>
-			<p class="active" id="4">S</p>
-			<p class="active" id="5">T</p>
-			<p class="" id="6">A</p>
-			<p class="" id="7">F</p>
-			<p class="" id="8">Ü</p>
-			<p class="" id="9">N</p>
-			<p class="" id="10">F</p>
-			<p class="" id="11">Z</p>
-			<p class="" id="12">E</p>
-			<p class="" id="13">H</p>
-			<p class="" id="14">N</p>
-			<p class="" id="15">Z</p>
-			<p class="" id="16">W</p>
-			<p class="" id="17">A</p>
-			<p class="" id="18">N</p>
-			<p class="" id="19">Z</p>
-			<p class="" id="20">I</p>
-			<p class="" id="21">G</p>
-			<p class="" id="22">D</p>
-			<p class="" id="23">R</p>
-			<p class="" id="24">E</p>
-			<p class="" id="25">I</p>
-			<p class="" id="26">V</p>
-			<p class="" id="27">I</p>
-			<p class="" id="28">E</p>
-			<p class="" id="29">R</p>
-			<p class="" id="30">T</p>
-			<p class="" id="31">E</p>
-			<p class="" id="32">L</p>
-			<p class="" id="33">V</p>
-			<p class="" id="34">O</p>
-			<p class="" id="35">R</p>
-			<p class="" id="36">F</p>
-			<p class="" id="37">U</p>
-			<p class="" id="38">N</p>
-			<p class="" id="39">K</p>
-			<p class="" id="40">N</p>
-			<p class="" id="41">A</p>
-			<p class="" id="42">C</p>
-			<p class="" id="43">H</p>
-			<p class="" id="44">H</p>
-			<p class="" id="45">A</p>
-			<p class="" id="46">L</p>
-			<p class="" id="47">B</p>
-			<p class="" id="48">A</p>
-			<p class="" id="49">E</p>
-			<p class="" id="50">L</p>
-			<p class="" id="51">F</p>
-			<p class="" id="52">Ü</p>
-			<p class="" id="53">N</p>
-			<p class="" id="54">F</p>
-			<p class="" id="55">E</p>
-			<p class="" id="56">I</p>
-			<p class="" id="57">N</p>
-			<p class="" id="58">S</p>
-			<p class="" id="59">X</p>
-			<p class="" id="60">Ä</p>
-			<p class="" id="61">M</p>
-			<p class="" id="62">Z</p>
-			<p class="" id="63">W</p>
-			<p class="" id="64">E</p>
-			<p class="" id="65">I</p>
-			<p class="" id="66">D</p>
-			<p class="" id="67">R</p>
-			<p class="" id="68">E</p>
-			<p class="" id="69">I</p>
-			<p class="" id="70">A</p>
-			<p class="" id="71">U</p>
-			<p class="" id="72">J</p>
-			<p class="" id="73">V</p>
-			<p class="" id="74">I</p>
-			<p class="" id="75">E</p>
-			<p class="" id="76">R</p>
-			<p class="" id="77">S</p>
-			<p class="" id="78">E</p>
-			<p class="" id="79">C</p>
-			<p class="" id="80">H</p>
-			<p class="" id="81">S</p>
-			<p class="" id="82">N</p>
-			<p class="" id="83">L</p>
-			<p class="" id="84">A</p>
-			<p class="" id="85">C</p>
-			<p class="" id="86">H</p>
-			<p class="" id="87">T</p>
-			<p class="" id="88">S</p>
-			<p class="" id="89">I</p>
-			<p class="" id="90">E</p>
-			<p class="" id="91">B</p>
-			<p class="" id="92">E</p>
-			<p class="" id="93">N</p>
-			<p class="" id="94">Z</p>
-			<p class="" id="95">W</p>
-			<p class="" id="96">Ö</p>
-			<p class="" id="97">L</p>
-			<p class="" id="98">F</p>
-			<p class="" id="99">Z</p>
-			<p class="" id="100">E</p>
-			<p class="" id="101">H</p>
-			<p class="" id="102">N</p>
-			<p class="" id="103">E</p>
-			<p class="" id="104">U</p>
-			<p class="" id="105">N</p>
-			<p class="" id="106">K</p>
-			<p class="" id="107">U</p>
-			<p class="" id="108">H</p>
-			<p class="" id="109">R</p>
-		</div>
-	</div>
+<body onload="">
+  <div class="square">
+    <!-- <div class="dot top-left"></div>
+    <div class="dot top-right"></div>
+    <div class="dot bottom-left"></div>
+    <div class="dot bottom-right"></div> -->
+    <div class="grid-container">
+      <span class="" id="0">E</span>
+      <span class="" id="1">S</span>
+      <span class="" id="2">K</span>
+      <span class="" id="3">I</span>
+      <span class="" id="4">S</span>
+      <span class="" id="5">T</span>
+      <span class="" id="6">A</span>
+      <span class="" id="7">F</span>
+      <span class="" id="8">Ü</span>
+      <span class="" id="9">N</span>
+      <span class="" id="10">F</span>
+      <span class="" id="11">Z</span>
+      <span class="" id="12">E</span>
+      <span class="" id="13">H</span>
+      <span class="" id="14">N</span>
+      <span class="" id="15">Z</span>
+      <span class="" id="16">W</span>
+      <span class="" id="17">A</span>
+      <span class="" id="18">N</span>
+      <span class="" id="19">Z</span>
+      <span class="" id="20">I</span>
+      <span class="" id="21">G</span>
+      <span class="" id="22">D</span>
+      <span class="" id="23">R</span>
+      <span class="" id="24">E</span>
+      <span class="" id="25">I</span>
+      <span class="" id="26">V</span>
+      <span class="" id="27">I</span>
+      <span class="" id="28">E</span>
+      <span class="" id="29">R</span>
+      <span class="" id="30">T</span>
+      <span class="" id="31">E</span>
+      <span class="" id="32">L</span>
+      <span class="" id="33">V</span>
+      <span class="" id="34">O</span>
+      <span class="" id="35">R</span>
+      <span class="" id="36">F</span>
+      <span class="" id="37">U</span>
+      <span class="" id="38">N</span>
+      <span class="" id="39">K</span>
+      <span class="" id="40">N</span>
+      <span class="" id="41">A</span>
+      <span class="" id="42">C</span>
+      <span class="" id="43">H</span>
+      <span class="" id="44">H</span>
+      <span class="" id="45">A</span>
+      <span class="" id="46">L</span>
+      <span class="" id="47">B</span>
+      <span class="" id="48">A</span>
+      <span class="" id="49">E</span>
+      <span class="" id="50">L</span>
+      <span class="" id="51">F</span>
+      <span class="" id="52">Ü</span>
+      <span class="" id="53">N</span>
+      <span class="" id="54">F</span>
+      <span class="" id="55">E</span>
+      <span class="" id="56">I</span>
+      <span class="" id="57">N</span>
+      <span class="" id="58">S</span>
+      <span class="" id="59">X</span>
+      <span class="" id="60">Ä</span>
+      <span class="" id="61">M</span>
+      <span class="" id="62">Z</span>
+      <span class="" id="63">W</span>
+      <span class="" id="64">E</span>
+      <span class="" id="65">I</span>
+      <span class="" id="66">D</span>
+      <span class="" id="67">R</span>
+      <span class="" id="68">E</span>
+      <span class="" id="69">I</span>
+      <span class="" id="70">A</span>
+      <span class="" id="71">U</span>
+      <span class="" id="72">J</span>
+      <span class="" id="73">V</span>
+      <span class="" id="74">I</span>
+      <span class="" id="75">E</span>
+      <span class="" id="76">R</span>
+      <span class="" id="77">S</span>
+      <span class="" id="78">E</span>
+      <span class="" id="79">C</span>
+      <span class="" id="80">H</span>
+      <span class="" id="81">S</span>
+      <span class="" id="82">N</span>
+      <span class="" id="83">L</span>
+      <span class="" id="84">A</span>
+      <span class="" id="85">C</span>
+      <span class="" id="86">H</span>
+      <span class="" id="87">T</span>
+      <span class="" id="88">S</span>
+      <span class="" id="89">I</span>
+      <span class="" id="90">E</span>
+      <span class="" id="91">B</span>
+      <span class="" id="92">E</span>
+      <span class="" id="93">N</span>
+      <span class="" id="94">Z</span>
+      <span class="" id="95">W</span>
+      <span class="" id="96">Ö</span>
+      <span class="" id="97">L</span>
+      <span class="" id="98">F</span>
+      <span class="" id="99">Z</span>
+      <span class="" id="100">E</span>
+      <span class="" id="101">H</span>
+      <span class="" id="102">N</span>
+      <span class="" id="103">E</span>
+      <span class="" id="104">U</span>
+      <span class="" id="105">N</span>
+      <span class="" id="106">K</span>
+      <span class="" id="107">U</span>
+      <span class="" id="108">H</span>
+      <span class="" id="109">R</span>
+    </div>
+  </div>
 </body>
 
 </html>
